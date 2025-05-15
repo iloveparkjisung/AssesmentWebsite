@@ -1,0 +1,22 @@
+font-family: 'DASHER', sans-serif;
+
+/* Color Theme Swatches in Hex */
+.aespa-website-theme-1-hex { color: #969696; }
+.aespa-website-theme-2-hex { color: #FFA8CF; }
+.aespa-website-theme-3-hex { color: #433E42; }
+.aespa-website-theme-4-hex { color: #B2AAA1; }
+.aespa-website-theme-5-hex { color: #F8EDED; }
+
+/* Color Theme Swatches in RGBA */
+.aespa-website-theme-1-rgba { color: rgba(150, 150, 150, 1); }
+.aespa-website-theme-2-rgba { color: rgba(255, 168, 207, 1); }
+.aespa-website-theme-3-rgba { color: rgba(67, 62, 66, 1); }
+.aespa-website-theme-4-rgba { color: rgba(178, 170, 161, 1); }
+.aespa-website-theme-5-rgba { color: rgba(248, 237, 237, 1); }
+
+/* Color Theme Swatches in HSLA */
+.aespa-website-theme-1-hsla { color: hsla(0, 0, 58, 1); }
+.aespa-website-theme-2-hsla { color: hsla(333, 100, 82, 1); }
+.aespa-website-theme-3-hsla { color: hsla(311, 3, 25, 1); }
+.aespa-website-theme-4-hsla { color: hsla(31, 9, 66, 1); }
+.aespa-website-theme-5-hsla { color: hsla(0, 44, 95, 1); }

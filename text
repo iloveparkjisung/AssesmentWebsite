@@ -1,4 +1,6 @@
 font-family: 'DASHER', sans-serif;
+#C2C8C2
+
 
 /* Color Theme Swatches in Hex */
 .aespa-website-theme-1-hex { color: #969696; }

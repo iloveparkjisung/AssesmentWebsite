@@ -1,6 +1,6 @@
 body {
     background-color: #C2C8C2;
-    
+
 }
 
 
@@ -45,6 +45,7 @@ ul {
 
 .topnav ul li {
     margin: 0 15px;
+    font-size: 25px
 }
 
 

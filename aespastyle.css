@@ -1,7 +1,21 @@
 body {
     background-color: #C2C8C2;
 
+
 }
+
+
+
+
+.member-list {
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+    height: 500px;
+    position: relative;
+}
+
+
+
 
 .aespalogo {
     width: 15%;
@@ -13,26 +27,44 @@ body {
 }
 
 
+
+
 .content {
     padding: 1%;
 }
 
-.member-list {
-    background-image: url(bg.png);
-    background-repeat: no-repeat;
-    height: 500px;
-    position: relative;
-}
+
+
 
 .members-list {
     margin-top: 8%;  
 }
 
 
+
+
 .members ul li img {
     width: 23%;
     height: auto;
 }
+
+
+
+
+ul {
+    list-style-type: none;
+}
+
+
+
+
+.topnav ul li {
+    margin: 0 15px;
+    font-size: 25px
+}
+
+
+
 
 .topnav {
     display: inline-block;
@@ -46,24 +78,20 @@ body {
     width: auto;
 }
 
-.topnav ul {
-    margin: 0;
-    padding: 10px;
-    list-style: none;
-    display: flex;
-}
+
+
 
 .topnav a {
     text-decoration: none;
     color: #433E42;
 }
 
-.topnav ul li {
-    margin: 0 15px;
-    font-size: 25px
-}
 
-ul {
-    list-style-type: none;
-}
 
+
+.topnav ul {
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    display: flex;
+}

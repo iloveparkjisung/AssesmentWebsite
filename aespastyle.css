@@ -1,19 +1,21 @@
 body {
-    background-color: #C2C8C2;
+    background-color: #282827;
+
 }
 
 
 
+
+.members-list {
+    margin-top: 8%;  
+}
 
 .member-list {
     background-image: url(bg.png);
     background-repeat: no-repeat;
     height: 500px;
     position: relative;
-    margin-top: 8%; 
 }
-
-
 
 
 .aespalogo {
@@ -26,17 +28,14 @@ body {
 }
 
 
-
 .content {
     padding: 1%;
 }
 
 
-
 .members ul li img {
-    width: 300px;
-    height: 150px;
-    position: relative;
+    width: 310px;
+    height: 160px;
 }
 
 
@@ -53,6 +52,7 @@ ul {
 }
 
 
+
 .topnav {
     display: inline-block;
     margin: 0;
@@ -66,9 +66,12 @@ ul {
 }
 
 
-
 .topnav ul {
     position: relative;
+}
+
+
+.topnav ul {
     margin: 0;
     padding: 10px;
     list-style: none;
@@ -128,7 +131,7 @@ ul {
 
 
 .topnav ul .dropdown a:hover {
-    background: #FFA8CF;
+    background: #ffa8f1;
     color: #fff;
 }
 
@@ -142,27 +145,25 @@ ul {
 
 
 .topnav a:hover {
-    background: #FFA8CF;
+    background: #dc4eff;
     color: #fff;
 }
 
 
-
-
 .information-part {
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    background: #282827;
+    min-width: 160px;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(255, 120, 203, 0.76);
     position: absolute;
     top: 350px;
     left: 60%;
-    margin: 0;
+    margin: 30px;
     padding: 10px;
     max-width: 600px;
     display: flex;
     flex-direction: column;
     font-size: 22px;
-    color: #433E42;
     font-family: "single-day", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -173,31 +174,25 @@ ul {
 .information-part h2 {
     margin: 0 0 10px 0;
     font-weight: 700;
-    color: #FFA8CF;
-    text-shadow: 1px 1px 8px #fff, 0 2px 8px #FFA8CF33;
+    color: #9dffef;
+    text-shadow: 1px 1px 8px #606aff, 0 2px 8px #ff3bad;
 }
 
 
 .information-part h2 {
     font-size: 20px;
-    color: #433E42;
+    color: #ff54f1;
     margin-bottom: 0;
+    text-shadow: 1px 1px 8px #0e1eff, 0 2px 8px #ff00bf;
 }
 
 
 .information-part p {
     margin: 10px 0 0 0;
-    color: #555;
+    color: #ffffff;
     font-size: 17;
+    text-shadow: 1px 1px 8px #0efff3, 0 2px 8px #3b89ff;
 }
-
-
-
-
-
-
-
-
 
 
 

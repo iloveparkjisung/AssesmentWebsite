@@ -151,10 +151,6 @@ ul {
 
 
 .information-part {
-    background: #282827;
-    min-width: 160px;
-    border-radius: 8px;
-    box-shadow: 0 8px 24px rgba(255, 120, 203, 0.76);
     position: absolute;
     top: 350px;
     left: 60%;
@@ -170,30 +166,16 @@ ul {
 }
 
 
-.information-part h1,
-.information-part h2 {
+.information-part h1 {
     margin: 0 0 10px 0;
     font-weight: 700;
-    color: #9dffef;
-    text-shadow: 1px 1px 8px #606aff, 0 2px 8px #ff3bad;
-}
-
-
-.information-part h2 {
-    font-size: 20px;
-    color: #ff54f1;
-    margin-bottom: 0;
-    text-shadow: 1px 1px 8px #0e1eff, 0 2px 8px #ff00bf;
-}
-
-
-.information-part p {
-    margin: 10px 0 0 0;
-    color: #ffffff;
-    font-size: 17;
-    text-shadow: 1px 1px 8px #0efff3, 0 2px 8px #3b89ff;
+    color: #ffff;
+    text-shadow: 3px 3px 10px #ab19ff
 }
 
 
 
-
+background: #282827;
+min-width: 160px;
+border-radius: 8px;
+box-shadow: 0 8px 24px rgba(255, 120, 203, 0.76);

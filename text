@@ -22,3 +22,11 @@ font-family: 'DASHER', sans-serif;
 .aespa-website-theme-3-hsla { color: hsla(311, 3, 25, 1); }
 .aespa-website-theme-4-hsla { color: hsla(31, 9, 66, 1); }
 .aespa-website-theme-5-hsla { color: hsla(0, 44, 95, 1); }
+
+font-family: "blackoak-std", serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: "rampart-one", sans-serif;
+font-weight: 400;
+font-style: normal;

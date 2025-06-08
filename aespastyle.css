@@ -1,5 +1,5 @@
 body {
-    background-color: #86239e;
+    background-color: #1d0035;
   }
   /*GROUP PAGE/FRONT PAGE */
   .members-list {
@@ -142,8 +142,8 @@ body {
   .intro h1 {
     margin: 0;
     font-weight: 700;
-    color: #ffcbeb;
-    text-shadow: 3px 3px 10px #ff3eaf;
+    color: #f0a4ff;
+    text-shadow: 3px 3px 10px #b23eff;
     text-align: right;
   }
   
@@ -243,3 +243,10 @@ body {
     position: absolute;
   }
   /*GROUP PAGE/FRONT PAGE */ 
+
+  .main-info-style h1{
+    color: #fff;
+  }
+  .main-info-style p {
+    color: #fff;
+  }

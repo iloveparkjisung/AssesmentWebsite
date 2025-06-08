@@ -1,59 +1,46 @@
 body {
-    background-color: #282827;
-
-}
-
-
-
-
-.members-list {
+    background-color: #86239e;
+  }
+  /*GROUP PAGE/FRONT PAGE */
+  .members-list {
     margin-top: 8%;  
-}
-
-.member-list {
+  }
+  
+  .member-list {
     background-image: url(bg.png);
     background-repeat: no-repeat;
     height: 500px;
     position: relative;
-}
-
-
-.aespalogo {
+  }
+  
+  .aespalogo {
     width: 15%;
     height: auto;
     float: left;
     right: 30px;
     display: block;
     margin-left: 30px;
-}
-
-
-.content {
+  }
+  
+  .content {
     padding: 1%;
-}
-
-
-.members ul li img {
+  }
+  
+  .members ul li img {
     width: 310px;
     height: 160px;
-}
-
-
-
-ul {
+  }
+  
+  ul {
     list-style-type: none;
-}
-
-
-
-.topnav ul li {
+  }
+  
+  .topnav ul li {
     margin: 0 15px;
     font-size: 25px
-}
-
-
-
-.topnav {
+  }
+  
+  .topnav {
     display: inline-block;
     margin: 0;
     padding: 10px;
@@ -63,15 +50,13 @@ ul {
     right: 10px;
     padding: 10px;
     width: auto;
-}
-
-
-.topnav ul {
+  }
+  
+  .topnav ul {
     position: relative;
-}
-
-
-.topnav ul {
+  }
+  
+  .topnav ul {
     margin: 0;
     padding: 10px;
     list-style: none;
@@ -80,16 +65,14 @@ ul {
     background: rgba(255,255,255,0.85);
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-}
-
-
-.topnav ul li {
+  }
+  
+  .topnav ul li {
     position: relative;
     font-size: 20px;
-}
-
-
-.topnav ul .dropdown {
+  }
+  
+  .topnav ul .dropdown {
     display: none;
     position: absolute;
     top: 100%;
@@ -102,24 +85,21 @@ ul {
     padding: 8px 0;
     opacity: 0;
     pointer-events: none;
-}
-
-
-.topnav ul li:hover > .dropdown {
+  }
+  
+  .topnav ul li:hover > .dropdown {
     display: block;
     opacity: 1;
     pointer-events: auto;
-}
-
-
-.topnav ul .dropdown li {
+  }
+  
+  .topnav ul .dropdown li {
     display: block;
     margin: 0;
     padding: 0;
-}
-
-
-.topnav ul .dropdown a {
+  }
+  
+  .topnav ul .dropdown a {
     display: block;
     padding: 12px 24px;
     color: #433E42;
@@ -127,55 +107,140 @@ ul {
     white-space: nowrap;
     font-size: 18px;
     border-radius: 4px;
-}
-
-
-.topnav ul .dropdown a:hover {
-    background: #ffa8f1;
+  }
+  
+  .topnav ul .dropdown a:hover {
+    background: #dc4eff;
     color: #fff;
-}
-
-
-.topnav a {
+  }
+  
+  .topnav a {
     text-decoration: none;
     color: #433E42;
     padding: 8px 16px;
     border-radius: 4px;
-}
-
-
-.topnav a:hover {
+  }
+  
+  .topnav a:hover {
     background: #dc4eff;
     color: #fff;
-}
-
-
-.information-part {
+  }
+  /*GROUP PAGE/FRONT PAGE CONTAIN*/
+  .intro { /* 6/5/25 I used vw as a way to minimize the font when the window is smaller*/
     position: absolute;
-    top: 350px;
-    left: 60%;
-    margin: 30px;
-    padding: 10px;
+    top: 50%;
+    right: 10%;
+    width: 90%;
     max-width: 600px;
     display: flex;
     flex-direction: column;
-    font-size: 22px;
-    font-family: "single-day", sans-serif;
+    font-size: 1.5vw;
+    font-family: 'Renogare Soft', sans-serif;                                     
     font-weight: 400;
     font-style: normal;
-}
-
-
-.information-part h1 {
-    margin: 0 0 10px 0;
+  }
+  
+  .intro h1 {
+    margin: 0;
     font-weight: 700;
-    color: #ffff;
-    text-shadow: 3px 3px 10px #ab19ff
-}
-
-
-
-background: #282827;
-min-width: 160px;
-border-radius: 8px;
-box-shadow: 0 8px 24px rgba(255, 120, 203, 0.76);
+    color: #ffcbeb;
+    text-shadow: 3px 3px 10px #ff3eaf;
+    text-align: right;
+  }
+  
+  .member-img {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s;
+  }
+  
+  .member-img img {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 16px;
+    display: block;
+  }
+  
+  .member-img .see-member {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #ff04c0;
+    padding: 10px 24px;
+    border-radius: 24px;
+    font-size: 1.2em;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    font-family: 'Renogare Soft', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  
+  .member-img:hover img {
+    transform: scale(1.12);
+    box-shadow: 0 8px 32px rgba(204, 0, 255, .5);
+    z-index: 2;
+  }
+  
+  .member-img:hover .see-member {
+    opacity: 1;
+  }
+  
+  .groupinformation { /* 6/5/25 I had made th einformation have a white rounded rectangle and imported the fonts I also formatted the text to wrap with the box as it wouldn't I searched up how to do it and experimented with different ways */
+    display: inline-block;
+    margin-left: 1%;
+    margin-top: 0;
+    width: auto;
+    height: fit-content;
+    text-align: left;
+    background: #ffffff; 
+    border-radius: 24px;          
+    padding: 24px 25px;  
+    box-shadow: 0 4px 24px rgba(255, 255, 255, 0.15);
+    max-width: 90vw;
+    box-sizing: border-box;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    word-wrap: break-word;
+    hyphens: auto;
+    font-size: 0.68vw;
+    font-family: 'Renogare Soft', sans-serif;                                     
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: rgb(134, 35, 158,0.25) 2px 2px 2px ;
+  }
+  
+  .groupgallery { /* 6/5/25 I had mad e agallery to show what the look like it is placed bside the information, i formatted it into a grid*/
+    position: absolute;
+    top: 96%;
+    right: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 40px;
+    width: 900px;
+  }
+  
+  .groupgallery img {
+    width: 105%;
+    height: 185px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  }
+  
+  .groupgallery img:last-child { /* 6/5/25 this makes the aespa 7th picture go be as wide as the two collumns combined*/
+    grid-column: 1 / span 2;
+    height: 500px;
+    width: 102.5%;
+    padding-top: -20px;
+  }
+  
+  .blackmambavideo { /* 6/5/25 I added a video as a way to fill up space */
+    top: 155%;
+    left: 2%;
+    position: absolute;
+  }
+  /*GROUP PAGE/FRONT PAGE */ 

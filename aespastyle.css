@@ -14,7 +14,7 @@ body {
   }
   
   .aespalogo {
-    width: 15%;
+    width: 16%;
     height: auto;
     float: left;
     right: 30px;
@@ -233,7 +233,7 @@ body {
   
   .groupgallery img:last-child { /* 6/5/25 this makes the aespa 7th picture go be as wide as the two collumns combined*/
     grid-column: 1 / span 2;
-    height: 500px;
+    height: 453px;
     width: 102.5%;
     padding-top: -20px;
   }

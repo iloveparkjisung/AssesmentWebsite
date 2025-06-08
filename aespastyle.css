@@ -14,12 +14,11 @@ body {
   }
   
   .aespalogo {
-    width: 16%;
+    width: 15%;
     height: auto;
     float: left;
-    right: 30px;
     display: block;
-    margin-left: 30px;
+    margin-left: 42px;
   }
   
   .content {
@@ -128,7 +127,7 @@ body {
   /*GROUP PAGE/FRONT PAGE CONTAIN*/
   .intro { /* 6/5/25 I used vw as a way to minimize the font when the window is smaller*/
     position: absolute;
-    top: 50%;
+    top: 40%;
     right: 10%;
     width: 90%;
     max-width: 600px;
@@ -239,7 +238,7 @@ body {
   }
   
   .blackmambavideo { /* 6/5/25 I added a video as a way to fill up space */
-    top: 155%;
+    top: 157%;
     left: 2%;
     position: absolute;
   }

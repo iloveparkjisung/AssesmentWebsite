@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', function () {
   
   function doStuff (callback) {
-    callback();
+    callback(); 
   }
 
   doStuff(function () {

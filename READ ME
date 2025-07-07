@@ -1,0 +1,77 @@
+So I have accidentally left this code that I did on tusday at home and I will be talking about what I have did.
+
+I did the members page by doing Karina first so I could just copy and paste it to the other members.
+
+I made the information go to the side of the member list and this part would be where I was at-
+with my the computer I was using at the computer classroom.
+
+I addded a youtube video from a comback album they had showing the members and then chose an album photo shoot to show as a picture.
+
+I then formatted it till it looked okay enough I did not go fancy or hard like the index as I only have a week so simple format it is.
+
+I went ahead and copy and pasted the html throught the other members and editing the information to the members specific information.
+
+I have copy and pasted most of my code into a doc but it hasnt been updated for a while.
+
+I added a footer that has aespa's current official website.
+
+That should be all that I've done that I have not commited and now I cant commit them as the computer I have been using at school decided Git hub is not installed anymore.
+
+
+
+7/3/2025
+
+I am trying to put js into my work I genuinely dont know how to do js ive been on tutorials the whole day.
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.clouds2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.178.0/three.min.js"></script>
+    <script type="text/javascript">
+        VANTA.CLOUDS2({
+            el: "#vanta-canvas",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            backgroundColor: 0xd328ff,
+             skyColor: 0xffd2f1,
+            cloudColor: 0x5400cf,
+            lightColor: 0x87acf0,
+            speed: 0.50,
+            texturePath: "./gallery/noise.png"
+})
+    </script>
+
+<style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            overflow: hidden;
+        }
+        #vanta-canvas {
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+This was the code I was going to use but gave up on
+
+I added so the index can fade in using js
+window.addEventListener('DOMContentLoaded', function () {
+  
+  function doStuff (callback) {
+    callback();
+  }
+
+  doStuff(function () {
+    document.body.className = 'visible';
+  });  
+}, false);
+
+html:
+<script>
+        document.body.className = 'hidden';
+</script>
+
+Im not sure why it wont work without the call back but I founda tutorial telling me to do this.

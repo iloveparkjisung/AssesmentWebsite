@@ -236,7 +236,7 @@ ul {
 }
   
 .aespavideo { /* 6/5/25 I added a video as a way to fill up space */
-  top: 185%;
+  top: 205%;
   left: 3%;
   position: absolute;
 }
@@ -244,7 +244,7 @@ ul {
 .indexfooter footer{
   position: absolute;
   left: 3.7%;
-  top: 230%;
+  top: 250%;
 }
 /*GROUP PAGE/FRONT PAGE */ 
 

@@ -1,0 +1,336 @@
+body {
+  background-color: #300641;
+  width: 100%;
+}
+/*GROUP PAGE/FRONT PAGE */
+
+
+.members-list {
+  margin-top: 8%;  
+}
+  
+.aespalogo {
+  width: 15%;
+  height: auto;
+  float: left;
+  display: block;
+  margin-left: 42px;
+}
+  
+.content {
+  padding: 1%;
+}
+  
+ul {
+  list-style-type: none;
+}
+  
+.topnav ul li {
+  margin: 0 15px;
+  font-size: 25px
+}
+  
+.topnav {
+  display: inline-block;
+  margin: 0;
+  padding: 10px;
+  align-items: center;
+  position: fixed;
+  top: 30px;
+  right: 100px;
+  padding: 10px;
+  width: 23.5vw;
+  height: 10vw;
+  z-index: 1030;
+}
+
+  
+.topnav ul {
+  position: relative;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  background: rgba(255,255,255,0.9);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+  
+.topnav ul li {
+  position: relative;
+  font-size: 20px;
+}
+  
+.topnav ul .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  min-width: 160px;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  z-index: 100;
+  padding: 8px 0;
+  opacity: 0;
+  pointer-events: none;
+}
+  
+.topnav ul li:hover > .dropdown {
+  display: block;
+  opacity: 1;
+  pointer-events:auto;
+}
+  
+.topnav ul .dropdown li {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+  
+.topnav ul .dropdown a {
+  display: block;
+  padding: 12px 24px;
+  color: #433E42;
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 18px;
+  border-radius: 4px;
+}
+  
+.topnav ul .dropdown a:hover {
+  background: #dc4eff;
+  color: #fff;
+}
+  
+.topnav a {
+  text-decoration: none;
+  color: #433E42;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+  
+.topnav a:hover {
+  background: #dc4eff;
+  color: #fff;
+}
+  /*GROUP PAGE/FRONT PAGE CONTAIN*/
+.intro { /* 6/5/25 I used vw as a way to minimize the font when the window is smaller*/
+  position: absolute;
+  top: 45%;
+  right: 2%;
+  width: 90%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  font-size: 1.5vw;
+  font-family: 'Renogare Soft', sans-serif;                                     
+  font-weight: 400;
+  font-style: normal;
+}
+  
+.intro h1 {
+  margin: 0;
+  margin-left: 10%;
+  word-wrap: break-word;
+  font-weight: 700;
+  color: #f0a4ff;
+  text-shadow: 3px 3px 10px #b23eff;
+  text-align: right;
+}
+
+
+.member-img {
+  position: relative;
+  display: inline-block;
+  margin-right: 30%;
+}
+  
+.member-img img {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 15px;
+  display: block; 
+  width: 25%;
+  height: 16%
+}
+  
+.member-img .see-member {
+  position: absolute;
+  left: 13%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #f0a4ff;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 1.2em;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  font-family: 'Renogare Soft', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-right: 20%;
+}
+  
+.member-img:hover img {
+  transform: scale(1.12);
+  box-shadow: 0 8px 32px rgba(204, 0, 255, .5);
+  z-index: 1;
+}
+  
+.member-img:hover .see-member {
+  opacity: 1;
+  margin-right: 20%;
+}
+  
+.groupinformation { /* 6/5/25 I had made the information have a white rounded rectangle and imported the fonts I also formatted the text to wrap with the box as it wouldn't I searched up how to do it and experimented with different ways */
+  display: inline-block;
+  margin-left: 1%;
+  margin-top: 0;
+  width: 97%;
+  height: fit-content;
+  text-align: left;
+  background: #ffffff; 
+  border-radius: 24px;          
+  padding: 24px 25px;  
+  box-shadow: 0 4px 24px rgba(255, 255, 255, 0.15);
+  max-width: 100vw;
+  box-sizing: border-box;
+  word-break: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  font-size: 1vw;
+  font-family: 'Renogare Soft', sans-serif;                                     
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: rgb(134, 35, 158,0.25) 2px 2px 2px ;
+  margin-bottom: 1%;
+}
+  
+.groupgallery { /* 6/5/25 I had made a gallery to show what the look like it is placed bside the information, i formatted it into a grid*/
+  position:relative;
+  float: right;
+  top: 96%;
+  right: 1%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 30px;
+  overflow-wrap: break-word;
+}
+.groupgallery img {
+  width: 20vw;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+  
+.groupgallery img:last-child { /* 6/5/25 this makes the aespa 7th picture go be as wide as the two collumns combined*/
+  grid-column: 1 / span 2;
+  height: 20vw;
+  width: 100%;
+  padding-top: -20px;
+}
+  
+.aespavideo { /* 6/5/25 I added a video as a way to fill up space */
+  top: 195%;
+  left: 3%;
+  position: absolute;
+}
+
+.indexfooter footer{
+  position: absolute;
+  left: 3.7%;
+  top: 245%;
+}
+/*GROUP PAGE/FRONT PAGE */ 
+
+
+/*MEMBER PAGES FORMAT*/ 
+#main-info-style .member-info {
+  position: absolute;
+  top: 6%;
+  left: 23%;
+  color:#fff;
+  display: inline-block;
+  margin-left: 1%;
+  margin-top: 0;
+  max-width: 100vw;
+  box-sizing: border-box;
+  word-break: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  font-size: 1vw;
+  font-family: 'Renogare Soft', sans-serif;                                     
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: rgba(164, 18, 201, 0.7) 8px 3px 3px ;
+  margin-bottom: 1%;
+}
+
+#main-info-style .member-info h1,
+#main-info-style .member-info p {
+  position: relative;
+  left: auto;
+  top: auto;
+}
+
+#main-info-style .member-info h1 {
+  font-size: 650%;
+}
+
+#main-info-style .member-info p {
+  line-height: 30px;
+  padding: 1px 10px;
+}
+
+#side .member-video {
+  position: absolute;
+  top: 55%;
+  right:2%;
+  width: 30vw;
+  height: 17vw;
+  margin: 1%;
+  margin-top: -1%;
+}
+
+#side .individual-img {
+  top: 19%;
+  right:3%;
+  position: absolute;
+  width: 30vw;
+  height: 17vw;
+  border-radius: 16px;
+  display: block;
+  margin-top: -2%;
+}
+
+/*MEMBER PAGES FORMAT*/ 
+
+/*FOOTER*/
+footer {
+  margin: 3% auto;
+  width: 50%;
+  background-color: rgba(151, 28, 199, 0.5);
+  padding: 5px;
+  text-align: center;
+  color: #f7cdff;
+  border-radius: 24px;    
+  text-shadow:hsl(276, 100%, 62%) 5px 3px 3px ;
+  box-shadow: 5px 5px 8px 8px rgb(151, 28, 199, 0.5);
+}
+
+footer a {
+  color: #f7cdff;
+  text-decoration: none;
+}
+
+footer p {
+  font-size: 100%;
+  font-family: 'Renogare Soft', sans-serif;
+  text-decoration: underline;
+}

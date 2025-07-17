@@ -1,7 +1,7 @@
 
 /*GROUP PAGE/FRONT PAGE */
 body {
-  background: linear-gradient(125deg, #ae0dce 10%, #ffb9ee 30%, #94c6ff 70%);
+  background: linear-gradient(125deg, #ae0dce 10%, #ffb9ee 30%, #94c6ff 70%); /* This makes the background have these colours aligned together in the given angle with the given percentage of spread of the colour(?) */
 }
 
 .members-list {
@@ -70,7 +70,7 @@ ul {
   min-width: 160px;
   border-radius: 8px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.15);
-  z-index: 100;
+  z-index: 100; /* appear on top of everything*/
   padding: 8px 0;
   opacity: 0;
   pointer-events: none;
@@ -79,7 +79,7 @@ ul {
 .topnav ul li:hover > .dropdown {
   display: block;
   opacity: 1;
-  pointer-events:auto;
+  pointer-events:auto; 
 }
   
 .topnav ul .dropdown li {
@@ -88,7 +88,7 @@ ul {
   padding: 0;
 }
   
-.topnav ul .dropdown a {
+.topnav ul .dropdown a { /* This part is what the contents on whats dropping down when clicked change*/
   display: block;
   padding: 12px 24px;
   color: #433E42;
@@ -98,7 +98,7 @@ ul {
   border-radius: 4px;
 }
   
-.topnav ul .dropdown a:hover {
+.topnav ul .dropdown a:hover { /* If I hover on the nav bar it would change to a shade of pink to show that you are hovering the right option*/
   background: #dc4eff;
   color: #fff;
 }
@@ -110,14 +110,10 @@ ul {
   border-radius: 4px;
 }
   
-.topnav a:hover {
-  background: #dc4eff;
-  color: #fff;
-}
   /*GROUP PAGE/FRONT PAGE CONTAIN*/
 .intro { /* 6/5/25 I used vw as a way to minimize the font when the window is smaller*/
   position: absolute;
-  top: 45%;
+  top: 45%; /* absolute+which everr direction combo lets me place elements into anywhere I like with some restrictions as absolute is awful for responsive websites but I have to use it to show desired look and this is the best way to do it as it changes the website less.*/
   right: 2%;
   width: 90%;
   max-width: 600px;
@@ -174,7 +170,7 @@ ul {
   margin-right: 20%;
 }
   
-.member-img:hover img {
+.member-img:hover img { /* This makes it so when you hover on a specific member it scales up using the transform */
   transform: scale(1.12);
   box-shadow: 0 8px 32px rgba(204, 0, 255, .5);
   z-index: 1;
@@ -272,8 +268,8 @@ ul {
 }
 
 #main-info-style .member-info h1,
-#main-info-style .member-info p {
-  position: relative;
+#main-info-style .member-info p { /* This part is cruical as without it the members info would get squished into one line.*/
+  position: relative; 
   left: auto;
   top: auto;
 }

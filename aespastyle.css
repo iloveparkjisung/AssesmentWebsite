@@ -79,7 +79,7 @@ ul {
 }
 
 .topnav ul li:hover > .dropdown,
-.topnav ul li:focus-within > .dropdown {
+.topnav ul li:focus-within /* This makes it so when the cursor is focused on the option its changes it's style kind of like a hover*/ > .dropdown {
   display: block;
   opacity: 1;
   pointer-events: auto;
@@ -255,20 +255,22 @@ iframe{
 
 
 .aespavideo {
-  float: left;
-  transform: translate(10%);
-  top: 77vw;
+  position: relative;
   left: 3vw;
-  position: absolute;
-  display: block;
-  padding-top: 17%;
-  margin-top: 5%;
-  margin-bottom: 0%;
-  width: 30vw;
-  height: 20vw;
+  top: 88vw;
+  width: 100%;
+  padding-bottom: 50%;
 }
 
-
+.aespavideo iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+}
 
 
 

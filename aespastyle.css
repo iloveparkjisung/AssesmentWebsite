@@ -157,6 +157,7 @@ ul {
   position: relative;
   display: inline-block;
   margin-right: 30%;
+  margin-left: 2%;
 }
  
 .member-img img {
@@ -199,8 +200,8 @@ ul {
  
 .groupinformation { /* 6/5/25 I had made the information have a white rounded rectangle and imported the fonts I also formatted the text to wrap with the box as it wouldn't I searched up how to do it and experimented with different ways */
   display: inline-block;
-  margin-left: 1%;
-  margin-top: 0;
+  margin-left: 1.5%;
+  margin-top: 1%;
   width: 97%;
   height: fit-content;
   text-align: left;
@@ -218,20 +219,23 @@ ul {
   font-weight: 400;
   font-style: normal;
   text-shadow: rgb(134, 35, 158,0.25) 2px 2px 2px ;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
  
 .groupgallery { /* 6/5/25 I had made a gallery to show what the look like it is placed bside the information, i formatted it into a grid*/
+  flex: 1 1 50%;
+  box-sizing: border-box;
   position:relative;
+  max-width: 50%;
   float: right;
-  top: 96%;
-  right: 1%;
+  top: 170%;;
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 10px;
-  column-gap: 30px;
-  overflow-wrap: break-word;
-  margin-left: 3%;
+  column-gap:20px;
+  overflow: visible; 
+  left: -20%;
+  margin-right: -15%;
 }
 .groupgallery img {
   width: 20vw;
@@ -249,36 +253,63 @@ ul {
 }
 
 
-iframe{
+.blackmamba {
   position: relative;
+  display: inline-block;
+  left: 2%;
 }
-
-
-.aespavideo {
-  position: relative;
-  left: 3vw;
-  top: 88vw;
-  width: 100%;
-  padding-bottom: 50%;
+ 
+.blackmamba img {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 15px;
+  display: block;
+  width: 65%;
+  height: 16%
 }
-
-.aespavideo iframe {
+ 
+.blackmamba .watch {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0%;
-  left: 0%;
-  right: 0%;
-  bottom: 0%;
+  left: 33%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #f0a4ff;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 1.2vw;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  font-family: 'Renogare Soft', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
 }
-
-
+ 
+.blackmamba:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 8px 32px rgba(204, 0, 255, .5);
+  z-index: 1;
+}
+ 
+.blackmamba:hover .watch{
+  opacity: 1;
+}
 
 
 .indexfooter footer{
-  position: absolute;
-  left: 3.7%;
-  top: 240%;
+  position: relative;
+  padding: 20px;
+  width: 45vw;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 1vw;
+  justify-content: flex-start;
+  width: 100%;;
 }
 /*GROUP PAGE/FRONT PAGE */
 

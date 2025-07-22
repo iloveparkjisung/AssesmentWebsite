@@ -33,12 +33,14 @@
     .loader {
         position: fixed;
         background-color: #FFF;
-        opacity: 3;
+        opacity: 1;
         height: 100%;
         width: 100%;
-        align-items: center;
         z-index: 10;
-        background-image: url("loader.png")
+        background-image: url("pictures/loader.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     </style>
 
@@ -129,6 +131,14 @@
         <h2>Fan Name</h2>
         <p><em><strong>MY (마이)</strong></em> - it means "the most precious friend" in KWANGYA.</p>
     </div>
+    <!-- 6/5/25 I put a yt video in the end to fill space -->
+    <div class="blackmamba">
+        <a href="https://www.youtube.com/watch?v=M2WTUoy4y6E">
+            <img src="pictures/aespavideobutton.jpg" class="videoimg">
+            <span class="watch">watch aespa's dirty work mv</span>
+        </a>
+    </div>
+
     <div class="groupgallery"> <!-- 6/5/25 I made a gallery-->
         <img src="groupgallery/group1.png">
         <img src="groupgallery/group2.png">
@@ -138,10 +148,7 @@
         <img src="groupgallery/group6.png">
         <img src="groupgallery/group7.png">
     </div>
-    <!-- 6/5/25 I put a yt video in the end to fill space -->
-    <div class="blackmamba">
-        <iframe class="aespavideo" width="55%" height= "550" src="https://www.youtube.com/embed/ZeerrnuLi5E?si=dsCZgK6xlYvEXm-e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
+
 </main>
 </body>
 
@@ -153,27 +160,6 @@
 </div>
 
 <style>
-    .blackmamba{
-        overflow: hidden;
-        width: 100%;
-        padding-top: 55%;
-        padding-right: 0%;
-    }
-
-    .aespavideo{
-        position: absolute;
-        transform: translate(2%);
-        bottom: 0;
-        right: 0;
-        width: 50vw;
-        height: 50%;
-        
-    }
-    
-    .blackmamba .aespavideo iframe {
-        position: relative;
-    }
-
     .loader {
         -webkit-animation: load-out 3s;
         animation: load-out 1s;

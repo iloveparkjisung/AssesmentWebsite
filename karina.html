@@ -6,36 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>₊˚⊹ ᰔ AESPA</title>
     <link rel="stylesheet" href="aespastyle.css">
-    <script defer src="app.js"></script>
     <link href="https://fonts.cdnfonts.com/css/renogare-soft" rel="stylesheet">
-    <style>
-    .hidden {
-      opacity: 0;
-    }
-
-    .visible {
-      opacity: 1;
-      transition: opacity 1s ease-out;
-    }
-    </style>
 </head>
 
 
 <body>
-    <script>
-        document.body.className = 'hidden';
-    </script>
     <style>
-    .information-part {
-        margin-left: 2%;
-        height: fit-content;
-        width: 70%;
-        text-align: left;
-        margin-top: 0;
+        .information-part {
+            margin-left: 2%;
+            height: fit-content;
+            width: 70%;
+            text-align: left;
+            margin-top: 0;
+        }
+    .loader {
+        position: fixed;
+        background-color: #FFF;
+        opacity: 1;
+        height: 100%;
+        width: 100%;
+        z-index: 10;
+        background-image: url("pictures/loader.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
-    </style>
+        </style>
+    
+        <div class="loader">
+    
+        </div>
    
-    </div>
     <div class="header-nav">
         <div class="content">
             <img src="pictures/aespalogo.png" class="aespalogo">
@@ -103,19 +104,27 @@
 </aside>
 </div>
 
-    <div class="main-info-style">
-        <h1>Karina</h1>
-        <p>Stage Name: Karina</p>
-        <p>Full Name: Yoo Ji-min</p>
-        <p>Birthday: April 11 2000</p>
-        <p>Age: 25</p>
-        <p>Position: Leader, main rapper, and a dancer</p>
-        <p>Other groups: Girls on Top, GOT the Beat</p>
+    <div id="main-info-style">
+        <div class="member-info">
+            <h1>Karina</h1>
+            <div class="individual-info">
+                <p>Stage Name: Karina</p>
+                <p>Full Name: Yoo Ji-min</p>
+                <p>Birthday: April 11 2000</p>
+                <p>Age: 25</p>
+                <p>Position: Leader, main rapper, and a dancer</p>
+                <p>Other groups: Girls on Top, GOT the Beat</p>
+            </div>
+        </div>
     </div>
-    <div id="side">
-        <img src="memberimage/member_image_ningning.png" class="individual-img">
-        <iframe class="member-video" src="https://www.youtube.com/embed/3eAOnazUdkM?si=BA3VDC4vI_3n6vhM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="side">
+        <a href="https://www.youtube.com/watch?v=FCarNUAK5vw">
+            <img src="memberimage/member_image_karina.png" class="individual-img">
+            <span class="imgwatch">karina</span>
+        </a>
     </div>
+    </div>
+    
 </body>
 
 <footer>
@@ -154,6 +163,15 @@
             opacity: 0;
         }
     }
+    @media (min-width: 600px) {
+    main {
+      flex-wrap: nowrap;
+    }
+
+    div {
+      flex-basis: 33%;
+    }
+  }
     </style>
 
 </html>
